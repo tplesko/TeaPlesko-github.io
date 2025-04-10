@@ -96,12 +96,8 @@ nav a:hover {
 }
 
 /* Lightbox stilovi */
-.lightbox-toggle {
-  display: none;
-}
 
-/* Prikaz slike u lightboxu */
-.lightbox-content {
+.lightbox {
   display: none;
   position: fixed;
   top: 0;
@@ -114,25 +110,23 @@ nav a:hover {
   z-index: 1000;
 }
 
-.lightbox-toggle:checked + .galerija .lightbox-content {
+.lightbox:target {
   display: flex;
 }
 
-.lightbox-content img {
+.lightbox img {
   max-width: 90%;
   max-height: 90%;
-  margin: 0 auto;
   border-radius: 10px;
 }
 
-/* Zatvaranje lightboxa */
-.close-lightbox {
+.close {
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 2rem;
   color: white;
-  cursor: pointer;
+  text-decoration: none;
   z-index: 1001;
 }
 
